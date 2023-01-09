@@ -1,4 +1,13 @@
-- Primeiro Teste:
+- Primeiro Teste (Tabuleiro 8x8):
     O primeiro teste consiste em testar se o tabuleiro realmente é um tabuleiro 8x8. Dessa forma, coloquei 5 entradas diferentes para testar a função do
     do arquivo de implementação, em que um é um Tabuleiro 8x8, outro é um 9x8, outro um 7x8, outro um 8x9 e por último um que não é quadrado. Assim, 
     consigo testar diversos tipos de tabuleiros diferentes.
+
+- Segundo Teste (Tem 8 rainhas):
+    O segundo teste consiste em verificar se no tabuleiro tem 8 rainhas. Assim, coloquei 3 entradas diferentes para testar a função implementada, primeiro
+    uma entrada com 8 rainhas, segundo uma com 7 e por fim uma com 9. Dessa maneira, consigo ver se funciona quando é maior, menor ou igual a 8 o número.
+
+- Terceiro Teste (Existem apenas 0's e 1's no Tabuleiro):
+    O terceiro teste consiste em verificar se no tabuleiro fornecido existem apenas 0's e 1's. Para testar, dei a entrada com 2 tabuleiros diferentes, um
+    apenas feito de 0's e 1's e outro com um número 7 aleatoriamente jogado no tabuleiro. Dessa forma, consigo testar se o tabuleiro forncecido possui
+    apenas espaços vazios ou rainhas.
