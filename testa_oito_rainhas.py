@@ -27,5 +27,5 @@ def teste_TabuleiroEh8x8():
                     [0,0,0,0,0,1,0,0]]
     assert TabuleiroEh8x8(entrada_8x8) != -1
     assert TabuleiroEh8x8(entrada_9x8) == -1
-    assert TabuleiroEh8x8(entrada_7x8) != -1
+    assert TabuleiroEh8x8(entrada_7x8) == -1
     
