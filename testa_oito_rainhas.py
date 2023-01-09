@@ -1,6 +1,15 @@
-from oito_rainhas import *
+"""
+Arquivo de testes do problema das 8 rainhas
+"""
 
-def teste_TabuleiroEh8x8():
+from oito_rainhas import tabuleiro_eh_8x8
+from oito_rainhas import tem_8_rainhas
+from oito_rainhas import apenas_0_e_1
+
+def teste_tabuleiro_eh_8x8():
+    """
+    Teste da função que verifica se o tabuleiro é 8x8.
+    """
     entrada_8x8 = [[0,0,0,0,1,0,0,0],
                     [0,1,0,0,0,0,0,0],
                     [0,0,0,1,0,0,0,0],
@@ -41,13 +50,16 @@ def teste_TabuleiroEh8x8():
                             [0,0,0,0,0,0,0,1],
                             [0,0,0,0,0,1,0,0],
                             [1,0,0,0,0,0,0,0]]
-    assert TabuleiroEh8x8(entrada_8x8) != -1
-    assert TabuleiroEh8x8(entrada_9x8) == -1
-    assert TabuleiroEh8x8(entrada_7x8) == -1
-    assert TabuleiroEh8x8(entrada_8x9) == -1
-    assert TabuleiroEh8x8(entrada_nao_quadrada) == -1
-    
-def teste_Tem_8_Rainhas():
+    assert tabuleiro_eh_8x8(entrada_8x8) != -1
+    assert tabuleiro_eh_8x8(entrada_9x8) == -1
+    assert tabuleiro_eh_8x8(entrada_7x8) == -1
+    assert tabuleiro_eh_8x8(entrada_8x9) == -1
+    assert tabuleiro_eh_8x8(entrada_nao_quadrada) == -1
+
+def teste_tem_8_rainhas():
+    """
+    Teste da função que verifica se o tabuleiro possui 8 rainhas.
+    """
     entrada_8rainhas = [[0,0,0,0,1,0,0,0],
                         [0,1,0,0,0,0,0,0],
                         [0,0,0,1,0,0,0,0],
@@ -72,11 +84,14 @@ def teste_Tem_8_Rainhas():
                         [0,0,0,0,0,0,0,1],
                         [0,0,0,0,0,1,0,0],
                         [1,0,0,0,0,0,0,1]]
-    assert Tem_8_Rainhas(entrada_8rainhas) != -1
-    assert Tem_8_Rainhas(entrada_7rainhas) == -1
-    assert Tem_8_Rainhas(entrada_9rainhas) == -1
+    assert tem_8_rainhas(entrada_8rainhas) != -1
+    assert tem_8_rainhas(entrada_7rainhas) == -1
+    assert tem_8_rainhas(entrada_9rainhas) == -1
 
-def teste_Apenas_0_e_1():
+def teste_apenas_0_e_1():
+    """
+    Teste da função que verifica se o tabuleiro possui apenas 0's e 1's.
+    """
     entrada_valida =[[0,0,0,0,1,0,0,0],
                     [0,1,0,0,0,0,0,0],
                     [0,0,0,1,0,0,0,0],
@@ -93,5 +108,5 @@ def teste_Apenas_0_e_1():
                         [0,0,0,0,0,0,0,1],
                         [0,0,7,0,0,1,0,0],
                         [1,0,0,0,0,0,0,0]]
-    assert Apenas_0_e_1(entrada_valida) != -1
-    assert Apenas_0_e_1(entrada_invalida) == -1
+    assert apenas_0_e_1(entrada_valida) != -1
+    assert apenas_0_e_1(entrada_invalida) == -1
