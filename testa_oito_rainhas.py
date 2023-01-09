@@ -54,11 +54,11 @@ def teste_tabuleiro_eh_8x8():
                             [0,0,0,0,0,0,0,1],
                             [0,0,0,0,0,1,0,0],
                             [1,0,0,0,0,0,0,0]]
-    assert tabuleiro_eh_8x8(entrada_8x8) != -1
-    assert tabuleiro_eh_8x8(entrada_9x8) == -1
-    assert tabuleiro_eh_8x8(entrada_7x8) == -1
-    assert tabuleiro_eh_8x8(entrada_8x9) == -1
-    assert tabuleiro_eh_8x8(entrada_nao_quadrada) == -1
+    assert tabuleiro_eh_8x8(entrada_8x8) is True
+    assert tabuleiro_eh_8x8(entrada_9x8) is False
+    assert tabuleiro_eh_8x8(entrada_7x8) is False
+    assert tabuleiro_eh_8x8(entrada_8x9) is False
+    assert tabuleiro_eh_8x8(entrada_nao_quadrada) is False
 
 def teste_tem_8_rainhas():
     """
@@ -88,9 +88,9 @@ def teste_tem_8_rainhas():
                         [0,0,0,0,0,0,0,1],
                         [0,0,0,0,0,1,0,0],
                         [1,0,0,0,0,0,0,1]]
-    assert tem_8_rainhas(entrada_8rainhas) != -1
-    assert tem_8_rainhas(entrada_7rainhas) == -1
-    assert tem_8_rainhas(entrada_9rainhas) == -1
+    assert tem_8_rainhas(entrada_8rainhas) is True
+    assert tem_8_rainhas(entrada_7rainhas) is False
+    assert tem_8_rainhas(entrada_9rainhas) is False
 
 def teste_apenas_0_e_1():
     """
@@ -112,8 +112,8 @@ def teste_apenas_0_e_1():
                         [0,0,0,0,0,0,0,1],
                         [0,0,7,0,0,1,0,0],
                         [1,0,0,0,0,0,0,0]]
-    assert apenas_0_e_1(entrada_valida) != -1
-    assert apenas_0_e_1(entrada_invalida) == -1
+    assert apenas_0_e_1(entrada_valida) is True
+    assert apenas_0_e_1(entrada_invalida) is False
 
 def teste_apenas_1_rainha_por_linha():
     """
@@ -135,8 +135,8 @@ def teste_apenas_1_rainha_por_linha():
                         [0,1,0,0,0,0,0,1],
                         [0,0,0,0,0,0,0,0],
                         [1,0,0,0,0,0,0,0]]
-    assert apenas_1_rainha_por_linha(entrada_valida) != 0
-    assert apenas_1_rainha_por_linha(entrada_invalida) == 0
+    assert apenas_1_rainha_por_linha(entrada_valida) is True
+    assert apenas_1_rainha_por_linha(entrada_invalida) is False
 
 def teste_apenas_1_rainha_por_coluna():
     """
@@ -158,8 +158,8 @@ def teste_apenas_1_rainha_por_coluna():
                         [0,0,0,0,0,0,0,1],
                         [0,0,0,0,0,1,0,0],
                         [0,1,0,0,0,0,0,0]]
-    assert apenas_1_rainha_por_coluna(entrada_valida) != 0
-    assert apenas_1_rainha_por_coluna(entrada_invalida) == 0
+    assert apenas_1_rainha_por_coluna(entrada_valida) is True
+    assert apenas_1_rainha_por_coluna(entrada_invalida) is False
 
 def teste_apenas_1_rainha_por_diagonal():
     """
@@ -181,8 +181,8 @@ def teste_apenas_1_rainha_por_diagonal():
                         [0,0,0,0,1,0,0,0],
                         [0,0,0,0,0,1,0,0],
                         [1,0,0,0,0,0,0,0]]
-    assert apenas_1_rainha_por_diagonal(entrada_valida) != 0
-    assert apenas_1_rainha_por_diagonal(entrada_invalida) == 0
+    assert apenas_1_rainha_por_diagonal(entrada_valida) is True
+    assert apenas_1_rainha_por_diagonal(entrada_invalida) is False
 
 def teste_problema_das_8_rainhas():
     """
