@@ -7,6 +7,7 @@ from oito_rainhas import tem_8_rainhas
 from oito_rainhas import apenas_0_e_1
 from oito_rainhas import apenas_1_rainha_por_linha
 from oito_rainhas import apenas_1_rainha_por_coluna
+from oito_rainhas import apenas_1_rainha_por_diagonal
 
 def teste_tabuleiro_eh_8x8():
     """
@@ -158,3 +159,26 @@ def teste_apenas_1_rainha_por_coluna():
                         [0,1,0,0,0,0,0,0]]
     assert apenas_1_rainha_por_coluna(entrada_valida) != 0
     assert apenas_1_rainha_por_coluna(entrada_invalida) == 0
+
+def teste_apenas_1_rainha_por_diagonal():
+    """
+    Teste da função que verifica se cada diagonal possui 1 rainha
+    """
+    entrada_valida =[[0,0,0,0,1,0,0,0],
+                    [0,1,0,0,0,0,0,0],
+                    [0,0,0,1,0,0,0,0],
+                    [0,0,0,0,0,0,1,0],
+                    [0,0,1,0,0,0,0,0],
+                    [0,0,0,0,0,0,0,1],
+                    [0,0,0,0,0,1,0,0],
+                    [1,0,0,0,0,0,0,0]]
+    entrada_invalida = [[0,0,0,0,0,0,0,1],
+                        [0,1,0,0,0,0,0,0],
+                        [0,0,0,1,0,0,0,0],
+                        [0,0,0,0,0,0,1,0],
+                        [0,0,1,0,0,0,0,0],
+                        [0,0,0,0,1,0,0,0],
+                        [0,0,0,0,0,1,0,0],
+                        [1,0,0,0,0,0,0,0]]
+    assert apenas_1_rainha_por_diagonal(entrada_valida) != 0
+    assert apenas_1_rainha_por_diagonal(entrada_invalida) == 0
