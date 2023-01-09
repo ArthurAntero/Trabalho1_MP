@@ -155,6 +155,6 @@ def teste_apenas_1_rainha_por_coluna():
                         [0,0,1,0,0,0,0,0],
                         [0,0,0,0,0,0,0,1],
                         [0,0,0,0,0,1,0,0],
-                        [1,0,0,0,0,0,0,0]]
+                        [0,1,0,0,0,0,0,0]]
     assert apenas_1_rainha_por_coluna(entrada_valida) != 0
     assert apenas_1_rainha_por_coluna(entrada_invalida) == 0

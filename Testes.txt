@@ -11,3 +11,13 @@
     O terceiro teste consiste em verificar se no tabuleiro fornecido existem apenas 0's e 1's. Para testar, dei a entrada com 2 tabuleiros diferentes, um
     apenas feito de 0's e 1's e outro com um número 7 aleatoriamente jogado no tabuleiro. Dessa forma, consigo testar se o tabuleiro forncecido possui
     apenas espaços vazios ou rainhas.
+
+- Quarto Teste (Existe apenas 1 rainha por linha):
+    O quarto teste consiste em verificar se na entrada fornecida, para cada linha do tabuleiro, existe apenas 1 rainha. Para o teste, dei 2 entradas, uma
+    sendo válida, portanto, possuindo 1 rainha por linha apenas e outra, sendo inválida, no qual a sexta linha possui duas rainhas. Assim, consigo 
+    ter a certeza que não existirão duas rainhas em uma mesma linha da matriz e, assim, nenhuma acaba se matando.
+
+- Quinto Teste (Existe apenas 1 rainha por coluna)
+    O quarto teste consiste em verificar se na entrada fornecida, para cada coluna do tabuleiro, existe apenas 1 rainha. Para o teste, dei 2 entradas, uma
+    sendo válida, portanto, possuindo 1 rainha por coluna apenas e outra, sendo inválida, no qual a primeira coluna possui duas rainhas. Assim, consigo 
+    ter a certeza que não existirão duas rainhas em uma mesma coluna da matriz e, assim, nenhuma acaba se matando.
