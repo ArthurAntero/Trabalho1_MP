@@ -17,3 +17,10 @@ def Tem_8_Rainhas(entrada):
     if count_rainhas != 8:
         return -1
     return 'ok'
+
+def Apenas_0_e_1(entrada):
+    for i in enumerate(entrada):
+        for j in enumerate(entrada[i[0]]):
+            if j[1] != 1 and j[1] != 0:
+                return -1
+    return 'ok'
