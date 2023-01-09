@@ -1,0 +1,4 @@
+- Primeiro Teste:
+    O primeiro teste consiste em testar se o tabuleiro realmente é um tabuleiro 8x8. Dessa forma, coloquei 5 entradas diferentes para testar a função do
+    do arquivo de implementação, em que um é um Tabuleiro 8x8, outro é um 9x8, outro um 7x8, outro um 8x9 e por último um que não é quadrado. Assim, 
+    consigo testar diversos tipos de tabuleiros diferentes.

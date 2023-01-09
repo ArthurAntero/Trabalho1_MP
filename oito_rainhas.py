@@ -1,9 +1,10 @@
 def TabuleiroEh8x8(entrada):
-    for i in range(len(entrada)):
-        i=i
-        for j in range(len(entrada[i])):
-            j=j
-    if (i != 7) or (j != 7):
+    linhas = len(entrada)
+    if linhas != 8:
         return -1
     else:
-        return 'ok'
+        for i in range(len(entrada)):
+            colunas = len(entrada[i])
+            if colunas != 8:
+                return -1
+    return 'ok'
