@@ -36,3 +36,13 @@ def apenas_0_e_1(entrada):
             if j[1] != 1 and j[1] != 0:
                 return -1
     return 'ok'
+
+def apenas_1_rainha_por_linha(entrada):
+    """
+    Função que verifica se a entrada fornecida possui apenas 1 rainha por linha
+    """
+    for i in enumerate(entrada):
+        count_rainhas = i[1].count(1)
+        if count_rainhas != 1:
+            return 0
+    return 'ok'
