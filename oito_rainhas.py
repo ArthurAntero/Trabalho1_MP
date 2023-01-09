@@ -89,16 +89,9 @@ def problema_das_8_rainhas(entrada):
     """
     Função que verifica se a entrada fornecida é válida, função principal do código
     """
-    test1 = tabuleiro_eh_8x8(entrada)
-    test2 = tem_8_rainhas(entrada)
-    test3 = apenas_0_e_1(entrada)
-    teste_entrada_valida = test1 and test2 and test3
-    test4 = apenas_1_rainha_por_linha(entrada)
-    test5 = apenas_1_rainha_por_coluna(entrada)
-    test6 = apenas_1_rainha_por_diagonal(entrada)
-    teste_solucao = test4 and test5 and test6
-    if teste_entrada_valida and teste_solucao:
-        return 1
-    if teste_entrada_valida:
+    if (tabuleiro_eh_8x8(entrada) and tem_8_rainhas(entrada) and apenas_0_e_1(entrada)):
+        if (apenas_1_rainha_por_linha(entrada) and apenas_1_rainha_por_coluna(entrada) and
+        apenas_1_rainha_por_diagonal(entrada)):
+            return 1
         return 0
     return -1
