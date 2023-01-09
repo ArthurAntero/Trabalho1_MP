@@ -134,3 +134,26 @@ def teste_apenas_1_rainha_por_linha():
                         [1,0,0,0,0,0,0,0]]
     assert apenas_1_rainha_por_linha(entrada_valida) != 0
     assert apenas_1_rainha_por_linha(entrada_invalida) == 0
+
+def teste_apenas_1_rainha_por_coluna():
+    """
+    Teste da função que verifica se cada coluna possui 1 rainha
+    """
+    entrada_valida =[[0,0,0,0,1,0,0,0],
+                    [0,1,0,0,0,0,0,0],
+                    [0,0,0,1,0,0,0,0],
+                    [0,0,0,0,0,0,1,0],
+                    [0,0,1,0,0,0,0,0],
+                    [0,0,0,0,0,0,0,1],
+                    [0,0,0,0,0,1,0,0],
+                    [1,0,0,0,0,0,0,0]]
+    entrada_invalida = [[1,0,0,0,0,0,0,0],
+                        [0,1,0,0,0,0,0,0],
+                        [0,0,0,1,0,0,0,0],
+                        [0,0,0,0,0,0,1,0],
+                        [0,0,1,0,0,0,0,0],
+                        [0,0,0,0,0,0,0,1],
+                        [0,0,0,0,0,1,0,0],
+                        [1,0,0,0,0,0,0,0]]
+    assert apenas_1_rainha_por_coluna(entrada_valida) != 0
+    assert apenas_1_rainha_por_coluna(entrada_invalida) == 0
