@@ -6,6 +6,7 @@ from oito_rainhas import tabuleiro_eh_8x8
 from oito_rainhas import tem_8_rainhas
 from oito_rainhas import apenas_0_e_1
 from oito_rainhas import apenas_1_rainha_por_linha
+from oito_rainhas import apenas_1_rainha_por_coluna
 
 def teste_tabuleiro_eh_8x8():
     """

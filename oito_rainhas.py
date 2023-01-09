@@ -39,10 +39,24 @@ def apenas_0_e_1(entrada):
 
 def apenas_1_rainha_por_linha(entrada):
     """
-    Função que verifica se a entrada fornecida possui apenas 1 rainha por linha
+    Função que verifica se a entrada fornecida possui apenas 1 rainha por linha.
     """
     for i in enumerate(entrada):
         count_rainhas = i[1].count(1)
         if count_rainhas != 1:
             return 0
+    return 'ok'
+
+def apenas_1_rainha_por_coluna(entrada):
+    """
+    Função que verifica se a entrada fornecida possui apenas 1 rainha por coluna.
+    """
+    coluna = 0
+    while coluna < 8:
+        lista_coluna = []
+        for i in enumerate(entrada):
+            lista_coluna.append(i[1][coluna])
+        if lista_coluna.count(1) != 1:
+            return 0
+        coluna += 1
     return 'ok'
