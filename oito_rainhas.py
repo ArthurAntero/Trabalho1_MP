@@ -1,6 +1,9 @@
 """
 Arquivo de implementação do problema das 8 rainhas
 """
+'''
+O numpy é uma biblioteca que me ajudou com diagonal de matrizes
+'''
 import numpy as np
 
 def tabuleiro_eh_8x8(entrada):
