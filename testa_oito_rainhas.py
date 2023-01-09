@@ -75,3 +75,23 @@ def teste_Tem_8_Rainhas():
     assert Tem_8_Rainhas(entrada_8rainhas) != -1
     assert Tem_8_Rainhas(entrada_7rainhas) == -1
     assert Tem_8_Rainhas(entrada_9rainhas) == -1
+
+def teste_Apenas_0_e_1():
+    entrada_valida =[[0,0,0,0,1,0,0,0],
+                    [0,1,0,0,0,0,0,0],
+                    [0,0,0,1,0,0,0,0],
+                    [0,0,0,0,0,0,1,0],
+                    [0,0,1,0,0,0,0,0],
+                    [0,0,0,0,0,0,0,1],
+                    [0,0,0,0,0,1,0,0],
+                    [1,0,0,0,0,0,0,0]]
+    entrada_invalida = [[0,0,0,0,1,0,0,0],
+                        [0,1,0,0,0,0,0,0],
+                        [0,0,0,1,0,0,0,0],
+                        [0,0,0,0,0,0,1,0],
+                        [0,0,1,0,0,0,0,0],
+                        [0,0,0,0,0,0,0,1],
+                        [0,0,7,0,0,1,0,0],
+                        [1,0,0,0,0,0,0,0]]
+    assert Apenas_0_e_1(entrada_valida) != -1
+    assert Apenas_0_e_1(entrada_invalida) == -1
