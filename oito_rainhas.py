@@ -1,6 +1,8 @@
 """
 Arquivo de implementação do problema das 8 rainhas
 """
+import numpy as np
+
 def tabuleiro_eh_8x8(entrada):
     """
     Função que verifica se o Tabuleiro é 8x8.
@@ -59,4 +61,26 @@ def apenas_1_rainha_por_coluna(entrada):
         if lista_coluna.count(1) != 1:
             return 0
         coluna += 1
+    return 'ok'
+
+def apenas_1_rainha_por_diagonal(entrada):
+    """
+    Função que verifica se a entrada fornecida possui apenas 1 rainha por diagonal
+    """
+    lista_diagonais = []
+    for i in range(8):
+        diagonal = np.diag(entrada, i)
+        lista_diagonal = []
+        for i_i in diagonal:
+            lista_diagonal.append(i_i)
+        lista_diagonais.append(lista_diagonal)
+    for j in range(-1, -8, -1):
+        diagonal = np.diag(entrada, j)
+        lista_diagonal = []
+        for j_j in diagonal:
+            lista_diagonal.append(j_j)
+        lista_diagonais.append(lista_diagonal)
+    for diag in lista_diagonais:
+        if diag.count(1) > 1:
+            return 0
     return 'ok'
