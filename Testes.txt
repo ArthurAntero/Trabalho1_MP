@@ -18,6 +18,16 @@
     ter a certeza que não existirão duas rainhas em uma mesma linha da matriz e, assim, nenhuma acaba se matando.
 
 - Quinto Teste (Existe apenas 1 rainha por coluna)
-    O quarto teste consiste em verificar se na entrada fornecida, para cada coluna do tabuleiro, existe apenas 1 rainha. Para o teste, dei 2 entradas, uma
+    O quinto teste consiste em verificar se na entrada fornecida, para cada coluna do tabuleiro, existe apenas 1 rainha. Para o teste, dei 2 entradas, uma
     sendo válida, portanto, possuindo 1 rainha por coluna apenas e outra, sendo inválida, no qual a primeira coluna possui duas rainhas. Assim, consigo 
     ter a certeza que não existirão duas rainhas em uma mesma coluna da matriz e, assim, nenhuma acaba se matando.
+
+- Sexto Teste (Nenhuma rainha mata a outra na diagonal)
+    O sexta teste consiste em verificar se na entrada fornecida, nenhuma das rainhas podem se matar na diagonal. Para o tesde, foram forncecidas duas
+    entradas, uma em que duas rainhas estão dispostas na mesma diagonal, e outra em que nenhuma rainha se encontra em nenhuma diagonal. Com esse teste,
+    posso garantir que nenhuma rainha matará a outra diagonalmente.
+
+- Sétimo Teste (Teste da função principal)
+    O último teste consiste em verificar se a função que junta todas as outras e que dará a resposta final ao problema das 8 rainhas realemte funciona.
+    Para esse teste, foram fornecidas 7 entradas, em que apenas 1 delas é uma solução pro problema das 8 rainhas, enquanto outras 3 são tabuleiros
+    configurados de maneira erronea e 3 que não são solução para o problema.
